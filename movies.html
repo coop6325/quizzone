@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies and TV Quiz | QuizZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>QuizZone</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Quizzes</a>
+    </nav>
+</header>
+
+<main class="quiz-page">
+
+    
+<h2>Movies and TV Quiz</h2>
+<p>Test your knowledge of famous movies, television shows, characters and actors!</p>
+
+
+    <!-- DIFFICULTY SELECTION -->
+
+    <div id="difficulty-screen">
+        <h3>Choose Your Difficulty</h3>
+        <p>Pick your challenge and start playing.</p>
+
+        <div class="difficulty-buttons">
+
+            <button type="button"
+                    id="easy-button"
+                    class="difficulty-btn easy-btn">
+                <span class="difficulty-icon">🌱</span>
+                <span class="difficulty-name">Easy</span>
+                <span class="difficulty-description">
+                    Perfect for beginners
+                </span>
+                <span class="difficulty-info">
+                    10 Questions
+                </span>
+            </button>
+
+            <button type="button"
+                    id="medium-button"
+                    class="difficulty-btn medium-btn">
+                <span class="difficulty-icon">⚡</span>
+                <span class="difficulty-name">Medium</span>
+                <span class="difficulty-description">
+                    Test your knowledge
+                </span>
+                <span class="difficulty-info">
+                    10 Questions
+                </span>
+            </button>
+
+            <button type="button"
+                    id="hard-button"
+                    class="difficulty-btn hard-btn">
+                <span class="difficulty-icon">🔥</span>
+                <span class="difficulty-name">Hard</span>
+                <span class="difficulty-description">
+                    For sports experts
+                </span>
+                <span class="difficulty-info">
+                    10 Questions
+                </span>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- QUIZ QUESTIONS -->
+
+    <div id="quiz-box" style="display:none;">
+
+        <p id="question-counter"></p>
+
+        <div class="progress-track">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h3 id="question"></h3>
+
+        <div id="answer-buttons"></div>
+
+        <p id="feedback" aria-live="polite"></p>
+
+        <button id="next-button"
+                type="button"
+                style="display:none;">
+            Next Question
+        </button>
+
+    </div>
+
+    <!-- FINAL RESULTS -->
+
+    <div id="results" style="display:none;">
+
+        <div class="result-icon">🏆</div>
+
+        <h2>Quiz Complete!</h2>
+
+        <p id="final-score"></p>
+        <p id="result-message"></p>
+
+        <button id="restart-button" type="button">
+            Choose Another Difficulty
+        </button>
+
+        <p class="back-home">
+            <a href="index.html">← Back to Homepage</a>
+        </p>
+
+    </div>
+
+</main>
+
+<script src="movies.js"></script>
+
+</body>
+</html>
