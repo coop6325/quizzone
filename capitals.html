@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>World Capitals Quiz - 30 Questions | QuizZone</title>
+
+    <meta name="description" content="Test your geography knowledge with 30 free world capitals trivia questions! Can you name the capital cities of countries around the world? Play on QuizZone.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>QuizZone</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Quizzes</a>
+    </nav>
+</header>
+
+<main class="quiz-page">
+
+   
+<h2>🌍 World Capitals Quiz</h2>
+<p>Can you name the capital cities of countries around the world? Test your knowledge with 30 fun trivia questions!</p>
+
+
+    <!-- DIFFICULTY SELECTION -->
+
+    <div id="difficulty-screen">
+        <h3>Choose Your Difficulty</h3>
+        <p>Pick your challenge and start playing.</p>
+
+        <div class="difficulty-buttons">
+
+            <button type="button"
+                    id="easy-button"
+                    class="difficulty-btn easy-btn">
+                <span class="difficulty-icon">🌱</span>
+                <span class="difficulty-name">Easy</span>
+                <span class="difficulty-description">
+                    Perfect for beginners
+                </span>
+                <span class="difficulty-info">
+                    10 Questions
+                </span>
+            </button>
+
+            <button type="button"
+                    id="medium-button"
+                    class="difficulty-btn medium-btn">
+                <span class="difficulty-icon">⚡</span>
+                <span class="difficulty-name">Medium</span>
+                <span class="difficulty-description">
+                    Test your knowledge
+                </span>
+                <span class="difficulty-info">
+                    10 Questions
+                </span>
+            </button>
+
+            <button type="button"
+                    id="hard-button"
+                    class="difficulty-btn hard-btn">
+                <span class="difficulty-icon">🔥</span>
+                <span class="difficulty-name">Hard</span>
+                <span class="difficulty-description">
+                    For capital city experts
+                </span>
+                <span class="difficulty-info">
+                    10 Questions
+                </span>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- QUIZ QUESTIONS -->
+
+    <div id="quiz-box" style="display:none;">
+
+        <p id="question-counter"></p>
+
+        <div class="progress-track">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h3 id="question"></h3>
+
+        <div id="answer-buttons"></div>
+
+        <p id="feedback" aria-live="polite"></p>
+
+        <button id="next-button"
+                type="button"
+                style="display:none;">
+            Next Question
+        </button>
+
+    </div>
+
+    <!-- FINAL RESULTS -->
+
+    <div id="results" style="display:none;">
+
+        <div class="result-icon">🏆</div>
+
+        <h2>Quiz Complete!</h2>
+
+        <p id="final-score"></p>
+        <p id="result-message"></p>
+
+        <button id="restart-button" type="button">
+            Choose Another Difficulty
+        </button>
+
+        <p class="back-home">
+            <a href="index.html">← Back to Homepage</a>
+        </p>
+
+    </div>
+
+</main>
+
+<script src="capitals.js"></script>
+
+	
+	<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner"
+     role="region" aria-label="Cookie preferences">
+
+    <div class="cookie-content">
+        <div class="cookie-text">
+            <h3>🍪 Your Privacy Matters</h3>
+            <p>
+                We use optional analytics cookies to understand
+                how visitors use QuizZone and improve our quizzes.
+                You can accept or reject these cookies.
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="reject-cookies" type="button">
+                Reject
+            </button>
+
+            <button id="accept-cookies" type="button">
+                Accept Analytics
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Settings -->
+<button id="cookie-settings" type="button">
+    Cookie Settings
+</button>
+
+<!-- Consent-controlled Analytics -->
+<script src="analytics.js"></script>
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
