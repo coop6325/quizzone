@@ -492,3 +492,112 @@ footer {
 
 
 
+
+/* QuizZone Cookie Banner */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 900px;
+    background: #1e293b;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+.cookie-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.cookie-text h3 {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.cookie-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.cookie-text a {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.cookie-buttons button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reject-cookies {
+    background: transparent;
+    color: white;
+    border: 1px solid #64748b;
+}
+
+#reject-cookies:hover {
+    background: #334155;
+}
+
+#accept-cookies {
+    background: #3b82f6;
+    color: white;
+    border: 1px solid #3b82f6;
+}
+
+#accept-cookies:hover {
+    background: #2563eb;
+}
+
+#cookie-settings {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 8px 12px;
+    background: #334155;
+    color: white;
+    border: 1px solid #64748b;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 9998;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .cookie-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cookie-buttons {
+        flex-direction: column;
+    }
+
+    .cookie-buttons button {
+        width: 100%;
+    }
+}
+
+
